@@ -179,7 +179,7 @@ class KnapsackTests: XCTestCase {
         XCTAssertEqual(sol.maxKilometers, 43)
     }
 
-    // MARK: - HIDDEN
+    // MARK: - 
     
     func test8() {
         let maxWeight = 240
