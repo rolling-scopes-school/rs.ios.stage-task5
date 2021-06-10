@@ -210,30 +210,30 @@ class KnapsackTests: XCTestCase {
     }
 
     func testMaxWeight1000() {
-        let expectation = expectation(description: #function)
+        let exp = expectation(description: #function)
         DispatchQueue.global().async {
             self.caseMaxWeight1000()
-            expectation.fulfill()
+            exp.fulfill()
         }
-        wait(for: [expectation], timeout: 3)
+        wait(for: [exp], timeout: 3)
     }
 
     func testMaxWeight1500() {
-        let expectation = expectation(description: #function)
+        let exp = expectation(description: #function)
         DispatchQueue.global().async {
             self.caseMaxWeight1500()
-            expectation.fulfill()
+            exp.fulfill()
         }
-        wait(for: [expectation], timeout: 3)
+        wait(for: [exp], timeout: 3)
     }
 
     func testMaxWeight2500() {
-        let expectation = expectation(description: #function)
+        let exp = expectation(description: #function)
         DispatchQueue.global().async {
             self.caseMaxWeight2500()
-            expectation.fulfill()
+            exp.fulfill()
         }
-        wait(for: [expectation], timeout: 3)
+        wait(for: [exp], timeout: 3)
     }
 
     fileprivate func caseMaxWeight1000() {
